@@ -1,0 +1,15 @@
+package com.wipro.mvn_project;
+
+public class Phone {
+	private SimAirtel sim;
+	public SimAirtel getSim() {
+		return sim;
+	}
+	public void setSim(SimAirtel sim) {
+		this.sim = sim;
+	}
+	public void Call() {
+		sim.call(8838383839);
+		sim.sendMessage(834739374, "Testing");
+	}
+}

@@ -1,0 +1,12 @@
+package com.wipro.mvn_project;
+
+public class SimAirtel {
+	
+	public void call(long phoneNo) {
+		System.out.println("Making a call:"+phoneNo);
+	}
+	
+	public void sendMessage(long phoneNo, String msg) {
+		System.out.println("Sending msg:"+msg+"To phone number:"+phoneNo);
+	}
+}

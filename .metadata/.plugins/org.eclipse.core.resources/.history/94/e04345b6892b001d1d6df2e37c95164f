@@ -1,0 +1,41 @@
+package com.wipro.mvn_project;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Phone {
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public int getRam() {
+		return ram;
+	}
+
+	public void setRam(int ram) {
+		this.ram = ram;
+	}
+
+	public int getStoreage() {
+		return storeage;
+	}
+
+	public void setStoreage(int storeage) {
+		this.storeage = storeage;
+	}
+
+	private String brand;
+	private int ram;
+	private int storeage;
+
+	private SimAirtel sim;
+
+	public void Call() {
+		sim.call(8838383);
+		sim.sendMessage(834739374, "Testing");
+	}
+}

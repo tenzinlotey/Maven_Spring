@@ -1,0 +1,5 @@
+package com.wipro.mvn.mvn_app;
+
+public class AppService {
+
+}

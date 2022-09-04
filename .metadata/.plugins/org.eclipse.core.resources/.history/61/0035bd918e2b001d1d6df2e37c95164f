@@ -1,0 +1,21 @@
+package com.wipro.mvn_project;
+
+import java.util.jar.Attributes.Name;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        ApplicationContext app = new AnnotationConfigApplicationContext(AppConfig.class);
+        Phone iPhone = app.getBean(Phone.class);
+        iPhone.Call();
+        System.out.println(iPhone);
+    }
+}
